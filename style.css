@@ -32,3 +32,22 @@
 #image {
     padding-left: 12%;
 }
+
+ /* unvisited link */
+ a:link {
+    color: blue;
+  }
+
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  a {
+    font-size: large;
+  }
+
