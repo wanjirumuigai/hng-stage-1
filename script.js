@@ -13,5 +13,5 @@ document.getElementById("txtStartDate").innerHTML = day;
 
 document.getElementById("time").innerHTML +=
   //   date.getUTCHours() + ":" + date.getUTCMinutes() + ":" + date.getUTCSeconds();
-  `${date.getUTCMilliseconds()}
+  `${Date.UTC(date.getFullYear(), date.getMonth(), date.getDay())}
   Milliseconds`;
