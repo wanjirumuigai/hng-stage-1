@@ -1,71 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-<!--
-        <div class="column-2" id="image"><img src="./pauline-hng.jpeg"  alt="Pauline Wanjiru" data-testid="slackDisplayImage"></div>
-
-    <div class="column-2">
-        <h1 data-testid="slackUserName">Pauline Wanjiru</h1>
-
-
-        <h3 data-testid="currentDayOfTheWeek">Current Day of the Week: </h3>
-
-    <h3 data-testid="currentUTCTime" >Current UTC Time: </h3>
-    <h3 data-testid="myTrack">Track: Frontend</h3>
-    <a href="https://github.com/wanjirumuigai/hng-stage-1" target="_blank" data-testid=“githubURL”>Github Link</a>
-    </div>
-
-
-
-
-</div>
-</div> -->
-<header>
-    <div >
-
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
         <div class="column-2">
-            <img
-                src="./profile.jpeg"
-                alt="Pauline Wanjiru"
-                data-testid="slackDisplayImage" />
+          <img
+            src="https://ca.slack-edge.com/T05FFAA91JP-U05RA6LFV42-eb2d77b7b3ab-72"
+            alt="Pauline Wanjiru"
+            data-testid="slackDisplayImage"
+          />
         </div>
-    </div>
-</header>
-<main>
-    <div>
-    <div class="column-2">
+      </div>
+    </header>
+    <main>
+      <div>
+        <div class="column-2">
+          <p data-testid="slackUserName">Pauline Wanjiru</p>
 
-            <p data-testid="slackUserName">Pauline Wanjiru</p>
-            <p>Day :</p>
-            <p data-testid="currentDayOfTheWeek">Monday</p>
+          <p data-testid="currentDayOfTheWeek"></p>
 
+          <p data-testid="currentUTCTime" class="time"></p>
 
-            <p>Current UTC Time :</p>
-            <p data-testid="currentUTCTime">12:00 PM UTC</p>
+          <p data-testid="myTrack">Frontend</p>
 
-            <p>Track :</p>
-            <p data-testid="myTrack">Frontend</p>
-
-            <p>Github Link :</p>
-            <a
-                href="https://github.com/wanjirumuigai/hng-stage-1"
-                data-testid="githubURL"
-                >Github Link</a
-            >
-
-    </div>
-</div>
-</main>
-
-
-
+          <a
+            href="https://github.com/wanjirumuigai/hng-stage-1"
+            data-testid="githubURL"
+            >Github Link</a
+          >
+        </div>
+      </div>
+    </main>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

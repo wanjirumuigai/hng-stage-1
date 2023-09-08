@@ -25,17 +25,14 @@ updateCurrentDayOfTheWeek();
 setInterval(updateCurrentDayOfTheWeek, 86400000);
 
 // Function to update the current local time in Nigeria (WAT time zone)
-function updateCurrentLocalTime() {
-  const currentDate = new Date();
-  const options = { timeZone: "Africa/Lagos" }; // Nigeria's time zone
-  const localTime = currentDate.toLocaleTimeString("en-US", options);
-  const utcTimeMilliseconds = currentDate.getTime(); // Get UTC time in milliseconds
-  document.querySelector('[data-testid="currentUTCTime"]').textContent =
-    "Local Time: " + localTime + " | UTC Time (ms): " + utcTimeMilliseconds;
+function updateTime() {
+  const date = new Date();
+  const hours = date.getUTCHours().toString().padStart(2, "0");
+  const minutes = date.getUTCMinutes().toString().padStart(2, "0");
+  const seconds = date.getUTCSeconds().toString().padStart(2, "0");
+  document.querySelector(
+    '[data-testid="currentUTCTime"]'
+  ).textContent = `${hours}:${minutes}:${seconds}`;
 }
 
-// Initial update
-updateCurrentLocalTime();
-
-// Update the current local time every second
-setInterval(updateCurrentLocalTime, 1000);
+setInterval(updateTime, 500);
