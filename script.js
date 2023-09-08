@@ -30,9 +30,10 @@ function updateTime() {
   const hours = date.getUTCHours().toString().padStart(2, "0");
   const minutes = date.getUTCMinutes().toString().padStart(2, "0");
   const seconds = date.getUTCSeconds().toString().padStart(2, "0");
+  const utcTimeMilliseconds = date.getTime();
   document.querySelector(
     '[data-testid="currentUTCTime"]'
-  ).textContent = `${hours}:${minutes}:${seconds}`;
+  ).textContent = `${hours}:${minutes}:${seconds} || UTC Time(ms) ${utcTimeMilliseconds}`;
 }
 
 setInterval(updateTime, 500);
