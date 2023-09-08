@@ -1,6 +1,6 @@
 function dayOftheWeek() {
   const currentDate = new Date();
-  const weekdays = { weekday: "long", timeZone: "Africa/Nairobi" };
+  const weekdays = { weekday: "long", timeZone: "Africa/Lagos" };
   const currentDay = new Intl.DateTimeFormat("en-US", weekdays).format(
     currentDate
   );
@@ -15,7 +15,7 @@ setInterval(dayOftheWeek, 86400000);
 
 function updateLocalTime() {
   const currentDate = new Date();
-  const weekdays = { timeZone: "Africa/Nairobi" };
+  const weekdays = { timeZone: "Africa/Lagos" };
   const localTime = currentDate.toLocaleTimeString("en-US", weekdays);
   const utcTimeMs = currentDate.getTime(); // Get UTC time in milliseconds
   const output =
